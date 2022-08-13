@@ -13,6 +13,9 @@
 		BD7983B428A7AA3800A7C92C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7983B228A7AA3800A7C92C /* Main.storyboard */; };
 		BD7983B628A7AA3A00A7C92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7983B528A7AA3A00A7C92C /* Assets.xcassets */; };
 		BD7983B928A7AA3A00A7C92C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7983B728A7AA3A00A7C92C /* LaunchScreen.storyboard */; };
+		BD7983C528A7AA9600A7C92C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7983C428A7AA9600A7C92C /* User.swift */; };
+		BD7983C728A7AB0300A7C92C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7983C628A7AB0300A7C92C /* ViewModel.swift */; };
+		BD7983CA28A7AB5700A7C92C /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7983C928A7AB5700A7C92C /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		BD7983B528A7AA3A00A7C92C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7983B828A7AA3A00A7C92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7983BA28A7AA3A00A7C92C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7983C428A7AA9600A7C92C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BD7983C628A7AB0300A7C92C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BD7983C928A7AB5700A7C92C /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		BD7983AB28A7AA3800A7C92C /* MVVMSimple */ = {
 			isa = PBXGroup;
 			children = (
+				BD7983C228A7AA5A00A7C92C /* ViewModels */,
+				BD7983C128A7AA5100A7C92C /* Views */,
+				BD7983C028A7AA4700A7C92C /* Models */,
 				BD7983AC28A7AA3800A7C92C /* AppDelegate.swift */,
 				BD7983AE28A7AA3800A7C92C /* SceneDelegate.swift */,
 				BD7983B028A7AA3800A7C92C /* ViewController.swift */,
-				BD7983B228A7AA3800A7C92C /* Main.storyboard */,
 				BD7983B528A7AA3A00A7C92C /* Assets.xcassets */,
-				BD7983B728A7AA3A00A7C92C /* LaunchScreen.storyboard */,
 				BD7983BA28A7AA3A00A7C92C /* Info.plist */,
 			);
 			path = MVVMSimple;
+			sourceTree = "<group>";
+		};
+		BD7983C028A7AA4700A7C92C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD7983C428A7AA9600A7C92C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD7983C128A7AA5100A7C92C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD7983C328A7AA6800A7C92C /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD7983C228A7AA5A00A7C92C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD7983C828A7AB4000A7C92C /* Bindings */,
+				BD7983C628A7AB0300A7C92C /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BD7983C328A7AA6800A7C92C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BD7983B728A7AA3A00A7C92C /* LaunchScreen.storyboard */,
+				BD7983B228A7AA3800A7C92C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BD7983C828A7AB4000A7C92C /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				BD7983C928A7AB5700A7C92C /* Dynamic.swift */,
+			);
+			path = Bindings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7983C728A7AB0300A7C92C /* ViewModel.swift in Sources */,
+				BD7983C528A7AA9600A7C92C /* User.swift in Sources */,
 				BD7983B128A7AA3800A7C92C /* ViewController.swift in Sources */,
+				BD7983CA28A7AB5700A7C92C /* Dynamic.swift in Sources */,
 				BD7983AD28A7AA3800A7C92C /* AppDelegate.swift in Sources */,
 				BD7983AF28A7AA3800A7C92C /* SceneDelegate.swift in Sources */,
 			);
