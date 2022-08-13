@@ -7,14 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController, Storyboardable {
     
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
     @IBOutlet weak var statusTextLabel: UILabel!
     
-    var viewModel = ViewModel()
+    var viewModel: LoginViewModel?
+    var coordinator: AppCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +28,13 @@ class ViewController: UIViewController {
     }
     
     func bindViewModel() {
-        viewModel.statusText.bind { statusText in
+        viewModel?.statusText.bind { statusText in
             DispatchQueue.main.async {
                 self.statusTextLabel.text = statusText
             }
         }
         
-        viewModel.statusColor.bind { statusColor in
+        viewModel?.statusColor.bind { statusColor in
             DispatchQueue.main.async {
                 self.statusTextLabel.textColor = statusColor
             }
@@ -41,8 +42,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginButtonPressed(_ sender: Any) {
-        viewModel.userButtonPressed(login: loginTF.text ?? "",
+        viewModel?.userButtonPressed(login: loginTF.text ?? "",
                                     password: passwordTF.text ?? "")
+        if viewModel!.isLoggedIn {
+            coordinator?.isLoggedIn = viewModel!.isLoggedIn
+            coordinator?.showMain(login: loginTF.text ?? "")
+        }
     }
 }
 

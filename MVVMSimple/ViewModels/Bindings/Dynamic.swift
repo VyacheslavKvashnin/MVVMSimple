@@ -11,6 +11,10 @@ class Dynamic<T> {
     typealias Listener = (T) -> Void
     private var listener: Listener?
     
+    init(_ v: T) {
+        value = v
+    }
+    
     func bind(_ listener: Listener?) {
         self.listener = listener
     }
@@ -21,7 +25,4 @@ class Dynamic<T> {
         }
     }
     
-    init(_ v: T) {
-        value = v
-    }
 }
