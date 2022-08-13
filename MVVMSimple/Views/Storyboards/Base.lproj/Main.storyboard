@@ -74,8 +74,8 @@
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WO0-RH-kmH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXx-lO-B1o">
-                                <rect key="frame" x="20" y="484" width="374" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXx-lO-B1o">
+                                <rect key="frame" x="164.5" y="484" width="85" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -92,10 +92,8 @@
                             <constraint firstItem="mbx-x7-Xav" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="JEz-zW-FEd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mbx-x7-Xav" secondAttribute="trailing" symbolic="YES" id="UN9-y2-Huw"/>
                             <constraint firstItem="y4b-NE-N8f" firstAttribute="top" secondItem="JRe-66-tNj" secondAttribute="bottom" constant="56" id="ZvJ-vr-WkC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IXx-lO-B1o" secondAttribute="trailing" constant="20" id="bgD-xZ-5YF"/>
                             <constraint firstItem="IXx-lO-B1o" firstAttribute="top" secondItem="y4b-NE-N8f" secondAttribute="bottom" constant="57" id="lsU-Yb-M4l"/>
                             <constraint firstItem="y4b-NE-N8f" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nAD-3z-cuw"/>
-                            <constraint firstItem="IXx-lO-B1o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nCM-Vk-Nqe"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

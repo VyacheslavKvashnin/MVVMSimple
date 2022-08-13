@@ -32,6 +32,12 @@ class ViewController: UIViewController {
                 self.statusTextLabel.text = statusText
             }
         }
+        
+        viewModel.statusColor.bind { statusColor in
+            DispatchQueue.main.async {
+                self.statusTextLabel.textColor = statusColor
+            }
+        }
     }
 
     @IBAction func loginButtonPressed(_ sender: Any) {
